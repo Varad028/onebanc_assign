@@ -4,6 +4,8 @@ from onebanc import check_mpin
 from datetime import date, timedelta
 import streamlit.components.v1 as components
 
+st.session_state.theme = "light"
+
 def local_css(file_name):
     """Load local CSS file"""
     with open(file_name) as f:
