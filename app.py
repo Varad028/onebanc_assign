@@ -4,7 +4,7 @@ from onebanc import check_mpin
 from datetime import date, timedelta
 import streamlit.components.v1 as components
 
-st.session_state.theme = "light"
+
 
 def local_css(file_name):
     """Load local CSS file"""
@@ -324,6 +324,8 @@ def set_custom_theme():
 
 def main():
     # Set page config
+    
+    st.session_state.theme = "light"
     st.set_page_config(
         page_title="OneBanc - MPIN Setup",
         page_icon="onebanc_portrait_logo_png.png",
